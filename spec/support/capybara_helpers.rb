@@ -93,6 +93,10 @@ module CapybaraHelpers
     expect(page).to have_css(".ss-main", text: /Select Value/)
   end
 
+  def expect_slimselect_option(text)
+    expect(page).to have_css(".ss-option", text: /#{text}/)
+  end
+
   def expect_slimselect_result_text_to_eq(result_number, text)
     expect(page).to have_css(
       "div.ss-option:nth-child(#{result_number})", text: /#{text}/
