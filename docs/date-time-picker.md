@@ -36,6 +36,8 @@ form do |f|
   f.actions
 ```
 
+You can also pass `input_format` to set DateTimePickerInput input format that should be expected from the backend. This option also be set globally in the options below.
+
 ## Overriding defaults
 
 You can modify, in the gem's setup block, the default options like this:
